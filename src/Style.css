@@ -32,15 +32,16 @@ header {
 
 .weather-forecast {
     display: flex; /* Use flexbox */
-    justify-content: space-around; /* Center the items */
+    justify-content: space-between; /* Space items evenly */
     margin-top: 30px;
+    flex-wrap: nowrap; /* Prevent wrapping to a new line */
 }
 
 .weather-forecast-day {
     display: flex; /* Use flexbox for day items */
-    flex-direction: row; /* Arrange items in a row */
-    align-items: center; /* Center items vertically */
-    margin: 10px; /* Add margin for spacing */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 0 10px; /* Space between each day */
     text-align: center; /* Center text and icons */
 }
 
@@ -101,24 +102,20 @@ main {
 }
 
 .weather-forecast-date {
-    text-align: center;
     color: rgba(39, 33, 66, 0.4);
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Slightly reduce space below date */
 }
 
 .weather-forecast-icon {
     width: 50px;
     height: 50px;
-    display: block;
-    margin: 0 10px; /* Space between icon and text */
 }
 
 .weather-forecast-temperatures {
     text-align: center;
     color: #f65282;
-    margin-top: 10px;
     display: flex;
     flex-direction: row; /* Keep temperatures in a row */
     justify-content: center;
