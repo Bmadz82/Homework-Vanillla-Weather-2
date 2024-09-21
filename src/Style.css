@@ -1,5 +1,7 @@
 .weather-forecast {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     justify-content: space-between;
     gap: 09px; /* Adjust spacing between forecast items */
   }
@@ -9,7 +11,7 @@
   }
   
   .weather-forecast-icon {
-    font-size: 1em; /* Make the icon larger if needed */
+    font-size: 1.2em; /* Make the icon larger if needed */
   }
   
   .weather-forecast-temperatures {
@@ -17,7 +19,10 @@
     justify-content: center;
     flex-direction: horizontal;
   }
-  
+.weather-forecast-icon img {
+  width: 40px;                    /* Customize the icon size */
+  height: 40px;
+}
   .weather-forecast-temperature {
     font-size: 1.2em;
   }
