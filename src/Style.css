@@ -1,25 +1,23 @@
 .weather-forecast {
     display: flex;
-    justify-content: space-between;
-    gap: 10px; /* Adjust spacing between forecast items */
+    justify-content: space-between; /* Evenly space the forecast days horizontally */
+    align-items: center; /* Vertically centers the items */
+    flex-wrap: nowrap; /* Prevents items from wrapping to the next line */
+    gap: 15px; /* Adds spacing between forecast days */
   }
   
   .weather-forecast-day {
-    text-align: center;
     flex-grow: 1;
+    text-align: center; /* Centers content in each forecast day */
   }
   
   .weather-forecast-icon {
-    font-size: 1em; /* Make the icon larger if needed */
+    font-size: 2em; /* Adjust icon size if needed */
   }
   
   .weather-forecast-temperatures {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-  }
-  
-  .weather-forecast-temperature {
-    font-size: 1.2em;
+    align-items: center; /* Centers temperature text */
   }
   
