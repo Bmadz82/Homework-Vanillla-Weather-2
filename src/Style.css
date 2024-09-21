@@ -15,7 +15,7 @@
   .weather-forecast-temperatures {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: horizontal;
   }
   
   .weather-forecast-temperature {
