@@ -1,28 +1,24 @@
-b.weather-forecast {
+.weather-forecast {
     display: flex;
-    flex-direction: column;
-    gap: 10px; /* Space between each row */
+    justify-content: space-between;
+    gap: 15px; /* Adjust spacing between forecast items */
   }
   
   .weather-forecast-day {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-  }
-  
-  .weather-forecast-date,
-  .weather-forecast-icon,
-  .weather-forecast-temperatures {
-    display: block;
     text-align: center;
   }
   
+  .weather-forecast-icon {
+    font-size: 2em; /* Make the icon larger if needed */
+  }
+  
   .weather-forecast-temperatures {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+  }
+  
+  .weather-forecast-temperature {
+    font-size: 1.2em;
   }
   
