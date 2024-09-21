@@ -1,15 +1,16 @@
 .weather-forecast {
     display: flex;
     justify-content: space-between;
-    gap: 15px; /* Adjust spacing between forecast items */
+    gap: 10px; /* Adjust spacing between forecast items */
   }
   
   .weather-forecast-day {
     text-align: center;
+    flex-grow: 1;
   }
   
   .weather-forecast-icon {
-    font-size: 2em; /* Make the icon larger if needed */
+    font-size: 1em; /* Make the icon larger if needed */
   }
   
   .weather-forecast-temperatures {
