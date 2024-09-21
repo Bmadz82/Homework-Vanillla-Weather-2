@@ -22,7 +22,7 @@ body {
   }
   
   .search-form-input {
-    background-color: #612ee0cc;
+    background-color: #a09ea3cc;
     border: none;
     border-radius: 6px;
     width: 80%;
@@ -33,13 +33,14 @@ body {
   .weather-forecast {
     display: flex; /* Use flexbox */
     flex-wrap: wrap; /* Allow items to wrap into rows */
-    justify-content: center; /* Center the items */
+    justify-content: space-around; /* Center the items */
     margin-top: 30px;
 }
 
 .weather-forecast-day {
     flex: 1 1 100px; /* Adjust size, allowing flexibility */
     margin: 10px; /* Add margin for spacing */
+    flex-direction: row;
     text-align: center; /* Center text and icons */
 }
   .search-form-button {
